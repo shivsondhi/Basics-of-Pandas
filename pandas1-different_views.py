@@ -1,7 +1,7 @@
 import pandas as pd 
 pd.set_option('display.expand_frame_repr', False)													#To show all columns when priting dataframe.
 
-path = 'C:\\Users\\Shiv\\Documents\\Datasets\\CSV\\Cars.csv'
+path = 'Cars.csv'
 #names = ['X1', 'X2', 'X3', 'X4', 'X5', 'X6', 'X7', 'X8', 'X9']
 countries_df = pd.read_csv(path, delimiter = ';', skiprows = range(1,2))
 
