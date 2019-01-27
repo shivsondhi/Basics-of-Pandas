@@ -5,7 +5,7 @@ pd.set_option('display.expand_frame_repr', False)
 path = 'Zoo.csv'
 zoo = pd.read_csv(path, delimiter = ',')
 
-path_1 = 'C:\\Users\\Shiv\\Documents\\Datasets\\CSV\\Travel-log.csv'
+path_1 = 'Travel-log.csv'
 names = ["date_time", "event", "country", "user_id", "source", "topic"]
 df = pd.read_csv(path_1, names = names, delimiter = ';')
 
