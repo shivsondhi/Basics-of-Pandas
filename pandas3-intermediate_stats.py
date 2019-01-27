@@ -1,7 +1,7 @@
 pd.set_option('display.expand_frame_repr', False)												#To show full view as opposed to summary view
 import pandas as pd
 
-path = 'C:\\Users\\Shiv\\Documents\\Datasets\\CSV\\Cars.csv'
+path = 'Cars.csv'
 df = pd.read_csv(path, delimiter = ';', na_values = ['0', ''], skiprows = range(1,2))			#na_values for handling empty values etc.
 
 print(df.head(10), end="\n\n")
