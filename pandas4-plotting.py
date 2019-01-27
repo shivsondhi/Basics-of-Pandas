@@ -4,11 +4,11 @@ from pandas.plotting import scatter_matrix
 pd.set_option('display.expand_frame_repr', False)
 
 #Cars 
-path = 'C:\\Users\\Shiv\\Documents\\Datasets\\CSV\\Cars.csv'
+path = 'Cars.csv'
 df_cars = pd.read_csv(path, delimiter = ';', skiprows = range(1,2))
 print("Cars dataset sample:\n", df_cars.sample(5), end="\n\n")
 #Zoo
-path_1 = 'C:\\Users\\Shiv\\Documents\\Datasets\\CSV\\Zoo.csv'
+path_1 = 'Zoo.csv'
 df_zoo = pd.read_csv(path_1, delimiter = ',')
 print("Zoo dataset sample:\n", df_zoo.sample(5), end="\n\n")
 
@@ -18,7 +18,7 @@ plt.suptitle("Plot 1/5. Scatter plot of each attribute of the Cars dataset.")			
 plt.show()
 
 #Histogram
-df_zoo.water_need.plot(kind = 'hist', bins = 100, figsize = (12,6))						#kind can also be (='scatter', x='', y='')
+df_zoo.water_need.plot(kind = 'hist', bins = 100, figsize = (12,6))						    #kind can also be (='scatter', x='', y='')
 plt.title("Plot 2/5. Histogram plot of water_needs in Zoo dataset.")
 plt.xlabel("Amount of water required by each animal")
 plt.ylabel("Frequency")
