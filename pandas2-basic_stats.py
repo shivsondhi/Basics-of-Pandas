@@ -2,7 +2,7 @@ import pandas as pd
 
 pd.set_option('display.expand_frame_repr', False)
 
-path = 'C:\\Users\\Shiv\\Documents\\Datasets\\CSV\\Zoo.csv'
+path = 'Zoo.csv'
 zoo = pd.read_csv(path, delimiter = ',')
 
 path_1 = 'C:\\Users\\Shiv\\Documents\\Datasets\\CSV\\Travel-log.csv'
